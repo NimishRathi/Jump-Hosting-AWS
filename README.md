@@ -47,9 +47,10 @@ The NAT gateway allows private instances in the VPC to initiate outbound traffic
 - SSH into the jump host from your local machine using its public IP.
 - From the jump host, SSH into the private instance using its private IP.
 - Confirm that you can access resources within the private subnet from the jump host.
+- 
 
 ## Conclusion
 Setting up jump hosting with NAT in AWS allows for secure access to resources within private subnets. By following the steps outlined in this guide, you can establish a secure network architecture that facilitates controlled access to your AWS resources.
-
+![AWS Logo]()
 
 
