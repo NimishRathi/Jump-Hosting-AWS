@@ -14,3 +14,11 @@ Private instances are servers or resources that are not directly accessible from
 3. NAT Gateway
 The NAT gateway allows private instances in the VPC to initiate outbound traffic to the internet while keeping them protected from direct inbound access. It provides source network address translation for instances in private subnets.
 
+# Steps to Set Up Jump Hosting with NAT
+1. Create a VPC
+- Navigate to the VPC dashboard in the AWS Management Console.
+- Click on "Create VPC" and follow the prompts to create a new VPC.
+- 
+
+
+
