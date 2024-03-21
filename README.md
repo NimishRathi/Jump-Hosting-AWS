@@ -15,7 +15,7 @@ Private instances are servers or resources that are not directly accessible from
 The NAT gateway allows private instances in the VPC to initiate outbound traffic to the internet while keeping them protected from direct inbound access. It provides source network address translation for instances in private subnets.
 
 ### Steps to Set Up Jump Hosting with NAT
-1. Create a VPC
+- ### 1. Create a VPC
 - Navigate to the VPC dashboard in the AWS Management Console.
 - Click on "Create VPC" and follow the prompts to create a new VPC.
 - ![AWS Logo](https://github.com/NimishRathi/Jump-Hosting-AWS/blob/main/Screenshot%202024-03-20%20153625.png)
@@ -33,7 +33,7 @@ The NAT gateway allows private instances in the VPC to initiate outbound traffic
 - Ensure that the security groups allow SSH (or your preferred protocol) access to the jump host from your IP address.
 - ![AWS Logo](https://github.com/NimishRathi/Jump-Hosting-AWS/blob/main/Screenshot%202024-03-20%20155648.png)
 
-- ### Configure NAT Gateway
+- ### 4. Configure NAT Gateway
 - Navigate to the NAT Gateways section in the VPC dashboard.
 - Create a new NAT Gateway in one of the public subnets.
 - Update the route tables of your private subnets to route traffic destined for the internet (`0.0.0.0/0`) to the NAT Gateway.
@@ -47,10 +47,16 @@ The NAT gateway allows private instances in the VPC to initiate outbound traffic
 - SSH into the jump host from your local machine using its public IP.
 - From the jump host, SSH into the private instance using its private IP.
 - Confirm that you can access resources within the private subnet from the jump host.
-- 
 
-## Conclusion
+- ping google.com from bastion host ! alright its working  
+![AWS Logo](https://github.com/NimishRathi/Jump-Hosting-AWS/blob/main/Screenshot%202024-03-21%20164823.png)
+now ssh into the private instance and try to ping 
+![AWS Logo](https://github.com/NimishRathi/Jump-Hosting-AWS/blob/main/Screenshot%202024-03-21%20164850.png)
+![AWS Logo](https://github.com/NimishRathi/Jump-Hosting-AWS/blob/main/Screenshot%202024-03-21%20165247.png) 
+ Confirm that you can access resources within the private subnet from the jump host.and ping google.com from private instance to check that NAT is working
+
+### Conclusion
 Setting up jump hosting with NAT in AWS allows for secure access to resources within private subnets. By following the steps outlined in this guide, you can establish a secure network architecture that facilitates controlled access to your AWS resources.
-![AWS Logo]()
+
 
 
