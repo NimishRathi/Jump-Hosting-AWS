@@ -18,6 +18,8 @@ The NAT gateway allows private instances in the VPC to initiate outbound traffic
 1. Create a VPC
 - Navigate to the VPC dashboard in the AWS Management Console.
 - Click on "Create VPC" and follow the prompts to create a new VPC.
+- ![AWS Logo]()
+
 - 
 
 
